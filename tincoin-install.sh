@@ -172,15 +172,16 @@ sudo systemctl start tincoind
 echo && echo "Installing Sentinel..."
 sleep 3
 sudo apt-get -y install virtualenv python-pip
-sudo apt-get -y install python-virtualenv
 sudo git clone https://github.com/tincoinpay/sentinel /home/masternode/sentinel
 cd /home/masternode/sentinel
-virtualenv ./venv
-./venv/bin/pip install -r requirements.txt
+sudo virtualenv venv
+. venv/bin/activate
+pip install -r requirements.txt
 export EDITOR=nano
 (crontab -l -u masternode 2>/dev/null; echo '* * * * * cd /home/masternode/sentinel && ./venv/bin/python bin/sentinel.py >/dev/null 2>&1') | sudo crontab -u masternode -
 sudo chown -R masternode:masternode /home/masternode/sentinel
 cd ~
+
 
 # Add alias to run tincoin-cli
 echo && echo "Masternode setup complete!"
