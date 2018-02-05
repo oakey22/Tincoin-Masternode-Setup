@@ -98,7 +98,7 @@ sleep 3
 sudo apt-get install git
 wget -O tincoind https://github.com/oakey22/Tincoin-Masternode-Setup/blob/master/tincoind?raw=true
 wget -O tincoin-cli https://github.com/oakey22/Tincoin-Masternode-Setup/blob/master/tincoin-cli?raw=true
-sudo chmod +x tindoind
+sudo chmod +x tincoind
 sudo chmod +x tincoin-cli 
 sudo add-apt-repository -y ppa:bitcoin/bitcoin
 sudo apt-get update
