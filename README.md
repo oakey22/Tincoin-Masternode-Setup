@@ -23,7 +23,7 @@ Open your wallet on your desktop.
 
 Go to the tab at the bottom that says "Tools"
 
-Go to the tab at the top that says "Console"
+Go to the tab at the top that says "Debug Console"
 
 Run the following command: masternode genkey
 
