@@ -7,7 +7,7 @@ tS2qa28ZHjkFxuLsxMJ2NDGeW5uEqL92C4
 
 # Preperation
 
-Get a VPS from a provider like OVH, DigitalOcean, Vultr, Linode, etc.
+Get a VPS from a provider like Vultr using my referal link. https://www.vultr.com/?ref=7362727
 
 Recommended VPS size: 512mb or 1gb RAM
 
